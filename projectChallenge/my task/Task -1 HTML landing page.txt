@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUp Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="background1">
+    <div class="container">
+      <div class="img">
+        
+      </div>
+      <div class="login-content">
+        <form action="index.html">
+          <h2 class="title">
+            <span>Welcome</span> to Intern <span>Crowd</span>
+          </h2>
+          <div class="input-div one">
+            <div class="i">
+            </div>
+            <div class="div">
+              <input type="text" class="input" placeholder="Username" />
+            </div>
+          </div>
+          <div class="input-div one">
+            <div class="i">
+            </div>
+            <div class="div">
+              <input type="text" class="input" placeholder="Email" />
+            </div>
+          </div>
+          <div class="input-div one">
+            <div class="i">
+            </div>
+            <div class="div">
+              <input type="text" class="input" placeholder="Phone No" />
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+            </div>
+            <div class="div">
+              <input type="password" class="input" placeholder="Password"/>
+            </div>
+          </div>
+          <input type="submit" class="btn" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
