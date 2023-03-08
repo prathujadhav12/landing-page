@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+</head>
+<body>
+  <h1>Quiz App</h1>
+  <form id="quiz-form">
+    <p>What is the capital of France?</p>
+    <input type="radio" name="question1" value="Paris">Paris<br>
+    <input type="radio" name="question1" value="London">London<br>
+    <input type="radio" name="question1" value="Rome">Rome<br>
+    <input type="radio" name="question1" value="Berlin">Berlin<br>
+    <br>
+
+    <p>What is the largest ocean in the world?</p>
+    <input type="radio" name="question2" value="Pacific">Pacific<br>
+    <input type="radio" name="question2" value="Atlantic">Atlantic<br>
+    <input type="radio" name="question2" value="Indian">Indian<br>
+    <input type="radio" name="question2" value="Arctic">Arctic<br>
+    <br>
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <p id="result"></p>
+
+  <script>
+    function checkAnswers() {
+      var score = 0;
+      var question1 = document.forms["quiz-form"]["question1"].value;
+      var question2 = document.forms["quiz-form"]["question2"].value;
+
+      if (question1 === "Paris") {
+        score++;
+      }
+      if (question2 === "Pacific") {
+        score++;
+      }
+
+      document.getElementById("result").innerHTML = "You scored " + score + " out of 2.";
+    }
+  </script>
+</body>
+</html>
